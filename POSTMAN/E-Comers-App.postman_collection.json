@@ -1,0 +1,93 @@
+{
+  "info": {
+    "_postman_id": "9429ef5d-4b58-4c7a-8baf-ffbbde7b58c7",
+    "name": "E-Comers-App",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "16075219"
+  },
+  "item": [
+    {
+      "name": "GetAllProduct",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/products",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Product By Id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
+        "url": {
+          "raw": "localhost:8080/api/product/12",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "product",
+            "12"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Product",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "product",
+              "value": "{\n    \"name\": \"iPhone 55\",\n    \"description\": \"Latest Apple smartphone\",\n    \"price\": 79999.00,\n    \"brand\": \"Apple\",\n    \"category\": \"Mobile\",\n    \"releaseDate\": \"2023-09-15\",\n    \"productAvailable\": true,\n    \"stockQuantity\": 50\n}",
+              "type": "text",
+              "uuid": "32eac73f-002a-4dcc-a2d6-cfb28504ad94",
+              "contentType": "application/json"
+            },
+            {
+              "key": "imageFile",
+              "type": "file",
+              "uuid": "fd2517bb-869a-4483-afd2-7df17ba3dcae",
+              "src": "/C:/Users/JARVIS/OneDrive/Pictures/Screenshots/Screenshot 2025-11-02 124221.png"
+            }
+          ]
+        },
+        "url": {
+          "raw": "localhost:8080/api/product",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "product"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
